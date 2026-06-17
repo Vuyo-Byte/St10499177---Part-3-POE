@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCare Services</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+
+    <!--Navigation Starts-->
+    <nav>
+        <div class="navbar">
+            <!-- FIX: typo "Auotmotive" → "Automotive" -->
+            <h3><b>AutoCare Automotive Services</b></h3>
+
+            <!-- FIX: was class="Preference" — CSS targets class="hamburger" -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="navlinks">
+                <li><a href="index.html">Home</a></li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <!-- FIX: was broken nested <ul> with <div> inside — invalid HTML -->
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+    <!--Navigation Ends-->
+
+    <h1 class="services-heading">AutoCare Services</h1>
+    <p class="services-subheading">These are the services we provide</p>
+    <p class="services-notice">NB!! All prices include standard labour unless stated otherwise. Final quotes may vary
+        based on vehicle type, vehicle condition and additional parts required.</p>
+
+    <div class="row">
+
+        <div class="column">
+            <div class="card">
+                <img src="./img/Engine1.jpg" alt="Engine">
+                <!-- FIX: changed class="container" to class="card-body" to match the fixed CSS -->
+                <div class="card-body">
+                    <h2>Engine &amp; Mechanical Repairs</h2>
+                    <p class="card-subtitle">Fix performance issues and keep your engine in top condition</p>
+                    <p class="list-label">Services include:</p>
+                    <!-- FIX: removed broken <pre><p> nesting. Using a proper <ul> list instead -->
+                    <ul class="service-list">
+                        <li>Engine diagnostics &amp; repairs</li>
+                        <li>Transmission repairs</li>
+                        <li>Suspension &amp; steering repairs</li>
+                        <li>Exhaust system repairs</li>
+                    </ul>
+                    <p class="list-label">Estimated Pricing:</p>
+                    <ul class="service-list">
+                        <li>Minor Repairs: From R5,000</li>
+                        <li>Moderate Repairs: R10,000 – R20,000+</li>
+                        <li>Major Engine Repairs/Overhaul: R16,000 – R50,000+</li>
+                    </ul>
+                    <button class="button">See More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- FIX: removed all <hr> tags from inside .row — invalid in a flex container -->
+
+        <div class="column">
+            <div class="card">
+                <img src="./img/Oil.jpg" alt="Oil change">
+                <div class="card-body">
+                    <h2>Routine Maintenance</h2>
+                    <p class="card-subtitle">Keep your car running smoothly with regular servicing</p>
+                    <p class="list-label">Services include:</p>
+                    <ul class="service-list">
+                        <li>Oil change &amp; oil filter replacement</li>
+                        <li>Air filter replacement</li>
+                        <li>Fluid checks &amp; top-ups (coolant, brake fluid, etc.)</li>
+                        <li>Spark plug replacement</li>
+                        <li>General vehicle inspection</li>
+                    </ul>
+                    <p class="list-label">Estimated Pricing:</p>
+                    <ul class="service-list">
+                        <li>Minor Service: R1,000 – R3,500</li>
+                        <li>Major Service: R2,500 – R8,000+</li>
+                    </ul>
+                    <button class="button">See More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./img/tyre.jpg" alt="Tyre and Wheel Services">
+                <div class="card-body">
+                    <h2>Tyre &amp; Wheel Services</h2>
+                    <p class="card-subtitle">Improve safety, handling and tyre lifespan</p>
+                    <p class="list-label">Services include:</p>
+                    <ul class="service-list">
+                        <li>Wheel alignment</li>
+                        <li>Wheel balancing</li>
+                        <li>Tyre rotation</li>
+                        <li>Tyre fitting &amp; replacement</li>
+                    </ul>
+                    <p class="list-label">Estimated Pricing:</p>
+                    <ul class="service-list">
+                        <li>Wheel Alignment: R200 – R500</li>
+                        <li>Wheel Balancing: R50 – R100 per wheel</li>
+                        <li>Tyre Rotation: R100 – R300</li>
+                        <li>Tyre Fitment: R80 – R200 per tyre</li>
+                    </ul>
+                    <button class="button">See More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./img/electrical_pic.jpg" alt="Electrical and Diagnostics">
+                <div class="card-body">
+                    <h2>Electrical &amp; Diagnostics</h2>
+                    <p class="card-subtitle">Identify and fix electrical and system faults</p>
+                    <p class="list-label">Services include:</p>
+                    <ul class="service-list">
+                        <li>Battery testing &amp; replacement</li>
+                        <li>Alternator repairs</li>
+                        <li>Starter motor repairs</li>
+                        <li>Computer diagnostics (check engine light)</li>
+                        <li>Wiring &amp; lighting repairs</li>
+                    </ul>
+                    <p class="list-label">Estimated Pricing:</p>
+                    <ul class="service-list">
+                        <li>Diagnostics: R300 – R800</li>
+                        <li>Battery Replacement: R800 – R2,500</li>
+                        <li>Electrical Repairs: R1,000 – R5,000+</li>
+                    </ul>
+                    <button class="button">See More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./img/brakes_pic.jpg" alt="Brake Service">
+                <div class="card-body">
+                    <h2>Brake Service</h2>
+                    <p class="card-subtitle">Ensure your safety with a reliable braking system</p>
+                    <p class="list-label">Services include:</p>
+                    <ul class="service-list">
+                        <li>Brake pad replacement</li>
+                        <li>Brake disc/rotor repair or replacement</li>
+                        <li>Brake fluid checks &amp; replacement</li>
+                    </ul>
+                    <p class="list-label">Estimated Pricing:</p>
+                    <ul class="service-list">
+                        <li>Brake Pads: R800 – R2,500</li>
+                        <li>Disc/Rotors: R1,500 – R4,000+</li>
+                        <li>Full Brake Service: R2,000 – R6,000</li>
+                    </ul>
+                    <button class="button">See More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./img/cooling_pic.jpg" alt="Cooling and Air Conditioning">
+                <div class="card-body">
+                    <h2>Cooling &amp; Air Conditioning</h2>
+                    <p class="card-subtitle">Stay cool and prevent engine overheating</p>
+                    <p class="list-label">Services include:</p>
+                    <ul class="service-list">
+                        <li>Radiator repairs</li>
+                        <li>Coolant system service</li>
+                        <li>Air conditioning regas &amp; repairs</li>
+                    </ul>
+                    <p class="list-label">Estimated Pricing:</p>
+                    <ul class="service-list">
+                        <li>Coolant Service: R500 – R1,500</li>
+                        <li>Radiator Repairs: R1,000 – R4,000+</li>
+                        <li>Aircon Service: R800 – R2,500</li>
+                    </ul>
+                    <button class="button">See More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./img/body&paint.jpg" alt="Body and Paint Service">
+                <div class="card-body">
+                    <h2>Body &amp; Paint Services</h2>
+                    <p class="card-subtitle">Restore your vehicle's appearance</p>
+                    <p class="list-label">Services include:</p>
+                    <ul class="service-list">
+                        <li>Dent removal</li>
+                        <li>Scratch repair</li>
+                        <li>Panel beating</li>
+                        <li>Full or partial respray</li>
+                    </ul>
+                    <p class="list-label">Estimated Pricing:</p>
+                    <ul class="service-list">
+                        <li>Minor Scratch Repair: R500 – R2,000</li>
+                        <li>Dent Repair: R1,000 – R5,000</li>
+                        <li>Full Respray: R10,000 – R30,000+</li>
+                    </ul>
+                    <button class="button">See More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./img/car wash_pic.jpg" alt="Additional Services">
+                <div class="card-body">
+                    <h2>Additional Services</h2>
+                    <p class="card-subtitle">Extra services to enhance your vehicle's condition and comfort</p>
+                    <p class="list-label">Services include:</p>
+                    <!-- FIX: typo "Windoscreen" → "Windscreen" (fixed twice) -->
+                    <ul class="service-list">
+                        <li>Car wash &amp; detailing</li>
+                        <li>Windscreen repair/replacement</li>
+                        <li>Vehicle inspection</li>
+                    </ul>
+                    <p class="list-label">Estimated Pricing:</p>
+                    <ul class="service-list">
+                        <li>Car Wash: R100 – R300</li>
+                        <li>Detailing: R500 – R2,000+</li>
+                        <li>Windscreen Replacement: R1,500 – R5,000</li>
+                    </ul>
+                    <button class="button">See More</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FIX: removed duplicate <h1>AutoCare Services</h1> that served no purpose -->
+
+    <h1 class="gallery-heading">Gallery</h1>
+
+    <!-- FIX: .mypicture had zero CSS — added styles in the stylesheet -->
+    <div class="gallery-grid">
+        <div class="mypicture">
+            <img src="./img/gallery1.jpg" alt="Gallery image 1">
+            <div class="pic-caption">Caption Text</div>
+        </div>
+        <div class="mypicture">
+            <img src="./img/gallery2.jpg" alt="Gallery image 2">
+            <div class="pic-caption">Caption Text</div>
+        </div>
+        <div class="mypicture">
+            <img src="./img/gallery3.jpg" alt="Gallery image 3">
+            <div class="pic-caption">Caption Text</div>
+        </div>
+        <div class="mypicture">
+            <img src="./img/gallery4.jpg" alt="Gallery image 4">
+            <div class="pic-caption">Caption Text</div>
+        </div>
+        <div class="mypicture">
+            <img src="./img/gallery5.jpg" alt="Gallery image 5">
+            <div class="pic-caption">Caption Text</div>
+        </div>
+        <div class="mypicture">
+            <img src="./img/gallery6.jpg" alt="Gallery image 6">
+            <div class="pic-caption">Caption Text</div>
+        </div>
+        <div class="mypicture">
+            <img src="./img/gallery7.jpg" alt="Gallery image 7">
+            <div class="pic-caption">Caption Text</div>
+        </div>
+        <div class="mypicture">
+            <img src="./img/gallery8.jpg" alt="Gallery image 8">
+            <div class="pic-caption">Caption Text</div>
+        </div>
+        <div class="mypicture">
+            <img src="./img/gallery9.jpg" alt="Gallery image 9">
+            <div class="pic-caption">Caption Text</div>
+        </div>
+    </div>
+
+    <!--Footer Starts-->
+    <!-- FIX: footer was outside </body> — moved inside where it belongs -->
+    <!-- FIX: removed stray <hr> that was sitting between </body> and <footer> -->
+    <!-- UPDATE: rebuilt footer with contact info, hours, and social icons -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <h4>AutoCare Automotive</h4>
+                <p class="footer-blurb">Trusted vehicle care for every South African road. Quality service, honest pricing.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94z"/></svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.36 3.92 3.88 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.7.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.35 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-10.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.7.9-.9 1.1-.2.2-.3.2-.6.1-.9-.4-2.4-1.6-3.1-2.9-.1-.2-.1-.4.1-.6.2-.2.4-.5.6-.7.1-.1.1-.3 0-.5-.1-.2-.5-1.3-.7-1.7-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.9 2.4 1 2.5.1.2 1.7 2.7 4.2 3.7 2.1.8 2.5.6 3-.4.4-1 .5-1.4.3-1.7zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.5 5.1L2.1 22l5-1.3c1.4.8 3.1 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-link-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p class="footer-contact-row">+27 31 000 0000</p>
+                <p class="footer-contact-row">info@autocare.co.za</p>
+                <p class="footer-contact-row">123 Main Road, Durban, KZN</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Business Hours</h4>
+                <p class="footer-hours-row">Mon - Fri <span>07:00 - 17:00</span></p>
+                <p class="footer-hours-row">Saturday <span>08:00 - 13:00</span></p>
+                <p class="footer-hours-row">Sunday <span class="closed">Closed</span></p>
+            </div>
+
+        </div>
+
+        <!-- FIX: @ → &copy; for proper copyright symbol -->
+        <p class="footer-bottom">&copy; 2026 Bhama Holdings. All Rights Reserved.</p>
+    </footer>
+    <!--Footer Ends-->
+
+    <script src="./js/shared.js"></script>
+
+</body>
+
+</html>

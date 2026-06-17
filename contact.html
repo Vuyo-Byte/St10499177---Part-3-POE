@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | AutoCare Services</title>
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <style>
+    @media (max-width: 768px) {
+      .container {
+        max-width: 100%;
+        margin: 10px 16px;
+        padding: 20px 16px;
+      }
+
+      h2 {
+        margin: 20px 16px 4px;
+        font-size: 24px;
+      }
+
+      h3 {
+        margin: 0 16px 16px;
+      }
+
+      #fname, #lname, #email, #message {
+        font-size: 16px; /* prevents iOS auto-zoom on input focus */
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- Navigation Starts -->
+  <nav>
+    <div class="navbar">
+      <h3><b>AutoCare Automotive Services</b></h3>
+
+      <!-- FIX: Renamed from 'Preference' to 'hamburger' to match JS, and corrected tag -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- FIX: Cleaned up broken nested ul structure -->
+      <ul class="nav-links" id="navlinks">
+        <li><a href="index.html">Home</a></li>
+
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Page Header -->
+  <section class="contact-hero">
+    <h1 class="contact-hero-title">Contact Us</h1>
+    <p class="contact-hero-tagline">We're here to help with anything your vehicle needs.</p>
+    <p class="contact-hero-subtitle">Have a question?</p>
+
+    <div class="contact-hero-info">
+      <p class="contact-hero-info-row">+27 31 000 0000</p>
+      <p class="contact-hero-info-row">info@autocare.co.za</p>
+      <p class="contact-hero-info-row">123 Main Road, Durban, KZN</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <form action="/action_page.php">
+
+      <!-- Name -->
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+
+      <!-- Last Name -->
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value=""><br>
+
+      <!-- Email -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" value=""><br><br>
+
+      <!-- Message -->
+      <label for="message">Comment or Question:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+      <!-- Submit button -->
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </div>
+
+  <!-- Find Us Map -->
+  <section class="map-section">
+    <h2 class="map-heading">Find Us</h2>
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps?q=Main+Road,+Durban,+KwaZulu-Natal,+South+Africa&output=embed"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="AutoCare location map">
+      </iframe>
+    </div>
+  </section>
+
+  <!--Footer Starts-->
+  <!-- UPDATE: rebuilt footer with contact info, hours, and social icons -->
+  <footer class="site-footer">
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <h4>AutoCare Automotive</h4>
+                <p class="footer-blurb">Trusted vehicle care for every South African road. Quality service, honest pricing.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.81 8.44-4.94 8.44-9.94z"/></svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.36 3.92 3.88 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.7.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.35 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-10.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.7.9-.9 1.1-.2.2-.3.2-.6.1-.9-.4-2.4-1.6-3.1-2.9-.1-.2-.1-.4.1-.6.2-.2.4-.5.6-.7.1-.1.1-.3 0-.5-.1-.2-.5-1.3-.7-1.7-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2 0 1.2.9 2.4 1 2.5.1.2 1.7 2.7 4.2 3.7 2.1.8 2.5.6 3-.4.4-1 .5-1.4.3-1.7zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.5 5.1L2.1 22l5-1.3c1.4.8 3.1 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-link-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p class="footer-contact-row">+27 31 000 0000</p>
+                <p class="footer-contact-row">info@autocare.co.za</p>
+                <p class="footer-contact-row">123 Main Road, Durban, KZN</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Business Hours</h4>
+                <p class="footer-hours-row">Mon - Fri <span>07:00 - 17:00</span></p>
+                <p class="footer-hours-row">Saturday <span>08:00 - 13:00</span></p>
+                <p class="footer-hours-row">Sunday <span class="closed">Closed</span></p>
+            </div>
+
+        </div>
+
+        <p class="footer-bottom">&copy; 2026 Bhama Holdings. All Rights Reserved.</p>
+  </footer>
+  <!--Footer Ends-->
+
+  <script src="./js/shared.js"></script>
+
+</body>
+
+</html>
