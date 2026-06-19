@@ -246,8 +246,7 @@ Stage	Customer Action	Touchpoint	Outcome
 2. Discovery	Browses the Homepage and Services Page	Website Homepage & Services Page	Understands offering and pricing — builds trust
 3. Consideration	Reads service descriptions, compares packages, views FAQs	Services Page + FAQ Section	Customer feels informed and confident
 4. Intent	Clicks 'Book Now' and selects a service	Booking Page — Step 1	Initiates the booking flow
-5. Booking	Enters vehicle details, selects date and time	Booking Page — Steps 2 & 3	Booking submitted — confirmation sent via email
-6. Post-Service	Receives follow-up email, leaves a review	Email + Testimonials Page	Review builds social proof for future customers
+5. Post-Service	Receives follow-up email, leaves a review	Email + Testimonials Page	Review builds social proof for future customers
 
  
 8. TECHNICAL REQUIREMENTS
@@ -255,7 +254,7 @@ Stage	Customer Action	Touchpoint	Outcome
 
 8.1 Hosting and Domain
 Requirement	Recommendation
-Domain Name	www.autocareservice.co.za
+Domain Name	https://vuyo-byte.github.io/St10499177---Part-3-POE/
 Hosting Provider	Afrihost or HostAfrica
 SSL Certificate	Let's Encrypt SSL — mandatory for booking forms
 Backup System	Weekly automated backups with 30-day retention
