@@ -223,7 +223,6 @@ The following descriptions outline the information hierarchy and layout structur
 Page	Top Section	Middle Section	Bottom / Footer Area
 Homepage	Sticky navbar + full hero banner with 'Book Now' CTA overlay	USP strip (3 icons: Fast, Transparent, Reliable) + Featured Services grid + Pricing cards	Testimonials carousel + WhatsApp CTA button + Footer with contact info
 Services Page	Navbar + page header with breadcrumb	Service category filter bar + Service cards (image, name, price, description, CTA)	FAQ teaser strip + 'Book Now' CTA banner + Footer
-Booking Page	Navbar + progress indicator (Step 1 of 3)	Step 1: Select Service & Date | Step 2: Enter Vehicle & Contact Details | Step 3: Confirm & Submit	Booking confirmation message + Email confirmation note + Footer
 Contact Page	Navbar + contact info cards (Phone, Email, Address)	Embedded Google Map (Durban location) + Contact enquiry form	WhatsApp chat button + Social media icons + Footer
 
 
