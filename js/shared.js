@@ -84,6 +84,22 @@
   startAuto();
 })();
 
+// ── Service Card "See More" Toggle (services.html only) ──
+(function () {
+  const buttons = document.querySelectorAll('.see-more-btn');
+  if (!buttons.length) return;
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const details = btn.previousElementSibling;
+      if (!details || !details.classList.contains('card-details')) return;
+
+      const isOpen = details.classList.toggle('is-open');
+      btn.textContent = isOpen ? 'See Less' : 'See More';
+    });
+  });
+})();
+
 // ── Contact form validation (contact.html only) ──
 (function () {
   const form = document.querySelector('.container form');

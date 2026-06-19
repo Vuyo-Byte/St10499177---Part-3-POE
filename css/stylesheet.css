@@ -404,6 +404,20 @@ nav {
   margin-bottom: 4px;
 }
 
+.card-details {
+  display: none;
+}
+
+.card-details.is-open {
+  display: block;
+  animation: detailsReveal 0.25s ease;
+}
+
+@keyframes detailsReveal {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .list-label {
   font-weight: 600;
   font-size: 12px;
@@ -551,17 +565,17 @@ h3 {
   max-width: 600px;
 }
 
-/* ── Contact Hero Header ── */
-.contact-hero {
+/* ── Page Header ── */
+.page-header {
   text-align: center;
   background: linear-gradient(135deg, var(--bg-deep) 0%, #1B2B4B 100%);
   color: var(--text-on-dark);
-  padding: 56px 20px 40px;
+  padding: 48px 20px 40px;
 }
 
-.contact-hero-title {
+.page-header h1 {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -569,33 +583,64 @@ h3 {
   margin: 0 0 12px;
 }
 
-.contact-hero-tagline {
+.page-header p {
   font-size: 16px;
   color: var(--text-on-dark-2);
-  max-width: 460px;
-  margin: 0 auto 20px;
+  max-width: 480px;
+  margin: 0 auto;
   line-height: 1.6;
 }
 
-.contact-hero-subtitle {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--accent-light);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin: 0 0 24px;
-}
-
-.contact-hero-info {
+/* ── Contact Content ── */
+.contact-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 28px;
+  gap: 32px;
+  max-width: 960px;
+  margin: 36px auto;
+  padding: 0 30px;
+  align-items: flex-start;
 }
 
-.contact-hero-info-row {
-  font-size: 14px;
-  color: var(--text-on-dark-2);
+.contact-info {
+  flex: 1 1 260px;
+  background-color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-card);
+  padding: 28px 32px;
+}
+
+.contact-info h2 {
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info ul li {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.contact-info ul li span {
+  display: block;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
+}
+
+.contact-wrapper .container {
+  flex: 1 1 320px;
   margin: 0;
 }
 
@@ -626,17 +671,18 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .contact-hero {
-    padding: 40px 16px 32px;
+  .page-header {
+    padding: 36px 16px 32px;
   }
 
-  .contact-hero-title {
-    font-size: 28px;
+  .page-header h1 {
+    font-size: 26px;
   }
 
-  .contact-hero-info {
+  .contact-wrapper {
     flex-direction: column;
-    gap: 8px;
+    padding: 0 16px;
+    margin: 24px auto;
   }
 
   .map-section {
